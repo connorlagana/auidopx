@@ -7,3 +7,6 @@ SUMMER = "../../../Desktop/summer.wav"
 wav = wave.open(SUMMER, 'r')
 
 print(audioop.avg(wav.readframes(wav.getnframes()), wav.getsampwidth()))
+
+wav.rewind() 
+print(audioop.max(wav.readframes(wav.getnframes()), wav.getsampwidth()))
