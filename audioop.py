@@ -1,4 +1,7 @@
 import audioop
-summer = "../../Desktop/summer.wav"
+import wave
+SUMMER = "../../../Desktop/summer.wav"
 
-print(summer)
+print(SUMMER)
+
+wave.open(SUMMER)
